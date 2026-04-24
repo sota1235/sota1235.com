@@ -22,7 +22,7 @@
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "^3.7.0",
     "@sota1235/remark-link-bookmark": "0.0.9",
-    "@tailwindcss/vite": "4.2.2",
+    "@tailwindcss/vite": "4.2.4",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "@vercel/og": "0.11.1",
