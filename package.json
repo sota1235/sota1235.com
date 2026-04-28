@@ -22,7 +22,7 @@
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "^3.7.0",
     "@sota1235/remark-link-bookmark": "0.0.9",
-    "@tailwindcss/vite": "4.2.2",
+    "@tailwindcss/vite": "4.2.4",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "@vercel/og": "0.11.1",
@@ -33,7 +33,7 @@
     "tailwindcss": "^4.2.1",
     "typescript": "^6.0.0"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.2",
   "pnpm": {
     "overrides": {
       "qs": ">=6.14.2",
@@ -51,8 +51,8 @@
     }
   },
   "devDependencies": {
-    "@astrojs/partytown": "2.1.6",
-    "@axe-core/playwright": "4.11.1",
+    "@astrojs/partytown": "2.1.7",
+    "@axe-core/playwright": "4.11.2",
     "@lhci/cli": "0.15.1",
     "@playwright/test": "1.59.1",
     "@tailwindcss/typography": "^0.5.19",
@@ -60,6 +60,6 @@
     "lint-staged": "^16.3.2",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "0.7.2"
+    "prettier-plugin-tailwindcss": "0.7.3"
   }
 }
