@@ -65,7 +65,7 @@ https://simonwillison.net/2025/Oct/22/openai-ciso-on-atlas/
 
 https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html
 
-https://openai.com/index/prompt-injections/
+[OpenAI: Understanding prompt injections: a frontier security challenge](https://openai.com/index/prompt-injections/)
 
 ### 2. 従来から存在した脅威の変化
 
