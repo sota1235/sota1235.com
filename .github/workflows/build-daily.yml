@@ -52,7 +52,7 @@ jobs:
           private-key: ${{ secrets.GH_APP_SOTA1235_PR_EDITOR_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
           repositories: |
-            sota1235.github.io
+            ${{ github.event.repository.name }}
           permission-contents: write
           permission-pull-requests: write
 
