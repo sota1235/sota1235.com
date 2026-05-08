@@ -22,7 +22,6 @@ function extractPubDateFromUrl(url) {
 
 function decodeHtmlEntities(str) {
   return str
-    .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
@@ -31,6 +30,7 @@ function decodeHtmlEntities(str) {
     .replace(/&#x([0-9a-fA-F]+);/g, (_, n) =>
       String.fromCharCode(parseInt(n, 16))
     )
+    .replace(/&amp;/g, '&')
 }
 
 function parseEntries(html) {
