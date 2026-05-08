@@ -1,36 +1,53 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
-import RssParser from 'rss-parser'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const companyBlogDir = join(__dirname, '..', 'src', 'content', 'companyBlog')
 
-const TENX_RSS = 'https://product.10x.co.jp/rss'
-const SOTA1235_AUTHOR_MARKER = 'blog.hatena.ne.jp/sota1235/'
+const ARCHIVE_URL = 'https://product.10x.co.jp/archive/author/sota1235'
+const ENTRY_URL_PATTERN = /\/entry\/(\d{4})\/(\d{2})\/(\d{2})\/(\d{6})/
 
 function extractDateKeyFromUrl(url) {
-  const match = url.match(/\/entry\/(\d{4})\/(\d{2})\/(\d{2})\/(\d{6})/)
+  const match = url.match(ENTRY_URL_PATTERN)
   if (!match) return null
   return `${match[1]}-${match[2]}-${match[3]}-${match[4]}`
 }
 
 function extractPubDateFromUrl(url) {
-  const match = url.match(/\/entry\/(\d{4})\/(\d{2})\/(\d{2})\//)
+  const match = url.match(ENTRY_URL_PATTERN)
   if (!match) return null
   return `${match[1]}-${match[2]}-${match[3]}`
 }
 
-async function isAuthoredBySota1235(articleUrl) {
-  try {
-    const res = await fetch(articleUrl)
-    if (!res.ok) return false
-    const html = await res.text()
-    return html.includes(SOTA1235_AUTHOR_MARKER)
-  } catch (e) {
-    console.warn(`Failed to fetch article page: ${articleUrl}`, e)
-    return false
+function decodeHtmlEntities(str) {
+  return str
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, n) =>
+      String.fromCharCode(parseInt(n, 16))
+    )
+}
+
+function parseEntries(html) {
+  const entries = new Map()
+  const linkRegex = /<a\b([^>]*)>([\s\S]*?)<\/a>/g
+  for (const m of html.matchAll(linkRegex)) {
+    const attrs = m[1]
+    if (!/class="[^"]*\bentry-title-link\b[^"]*"/.test(attrs)) continue
+    const hrefMatch = attrs.match(/href="([^"]+)"/)
+    if (!hrefMatch) continue
+    const link = hrefMatch[1]
+    if (!ENTRY_URL_PATTERN.test(link)) continue
+    if (entries.has(link)) continue
+    const title = decodeHtmlEntities(m[2].replace(/<[^>]+>/g, '').trim())
+    entries.set(link, title)
   }
+  return Array.from(entries, ([link, title]) => ({ link, title }))
 }
 
 function collectExistingLinks(dirPath) {
@@ -50,14 +67,18 @@ function collectExistingLinks(dirPath) {
 }
 
 async function main() {
-  const parser = new RssParser()
-  const feed = await parser.parseURL(TENX_RSS)
+  const res = await fetch(ARCHIVE_URL)
+  if (!res.ok) {
+    throw new Error(`Failed to fetch ${ARCHIVE_URL}: ${res.status}`)
+  }
+  const html = await res.text()
+  const entries = parseEntries(html)
+  console.log(`Found ${entries.length} entries on archive page.`)
+
   const existingLinks = collectExistingLinks(companyBlogDir)
 
   let added = 0
-  for (const item of feed.items) {
-    const link = item.link
-    if (!link) continue
+  for (const { link, title } of entries) {
     if (existingLinks.has(link)) continue
 
     const uniqueKey = extractDateKeyFromUrl(link)
@@ -66,14 +87,12 @@ async function main() {
     const pubDate = extractPubDateFromUrl(link)
     if (!pubDate) continue
 
-    if (!(await isAuthoredBySota1235(link))) continue
-
     const filename = `10x-${uniqueKey}.json`
     const path = join(companyBlogDir, filename)
     if (existsSync(path)) continue
 
     const payload = {
-      title: item.title ?? '',
+      title,
       company: '10X',
       link,
       pubDate,

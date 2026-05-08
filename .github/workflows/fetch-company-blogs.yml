@@ -69,6 +69,6 @@ jobs:
           gh pr create \
             -R "$REPO" \
             --title "[automation] add new 10X company blog posts - $DATE" \
-            --body "Automatically added new 10X company blog posts authored by sota1235 fetched from https://product.10x.co.jp/rss." \
+            --body "Automatically added new 10X company blog posts fetched from https://product.10x.co.jp/archive/author/sota1235." \
             --base main \
             --head "$BRANCH_NAME"
