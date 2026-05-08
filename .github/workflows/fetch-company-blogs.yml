@@ -1,0 +1,75 @@
+name: Fetch 10X company blog posts
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    environment: main
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-node
+
+      - name: Fetch new 10X company blog posts
+        id: fetch
+        run: |
+          node scripts/fetchCompanyBlogs.mjs
+          if [[ -n $(git status --porcelain src/content/companyBlog) ]]; then
+            echo "has_diff=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_diff=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
+        if: steps.fetch.outputs.has_diff == 'true'
+        id: app-token
+        with:
+          app-id: ${{ secrets.GH_APP_SOTA1235_PR_EDITOR_APP_ID }}
+          private-key: ${{ secrets.GH_APP_SOTA1235_PR_EDITOR_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: |
+            ${{ github.event.repository.name }}
+          permission-contents: write
+          permission-pull-requests: write
+
+      - name: Format new files
+        if: steps.fetch.outputs.has_diff == 'true'
+        run: pnpm exec prettier --write 'src/content/companyBlog/**/*.json'
+
+      - name: Create pull request
+        if: steps.fetch.outputs.has_diff == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          DATE="$(date +%Y%m%d)"
+          BRANCH_NAME="feat-fetch-company-blogs-$DATE"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          gh auth setup-git
+
+          if git ls-remote --exit-code --heads origin "$BRANCH_NAME"; then
+            echo "Branch $BRANCH_NAME already exists on remote. Skipping."
+            exit 0
+          fi
+
+          git checkout -b "$BRANCH_NAME"
+          git add src/content/companyBlog
+          git commit -m "feat: add new 10X company blog posts (by GitHub Actions)"
+          git push origin "$BRANCH_NAME"
+
+          gh pr create \
+            -R "$REPO" \
+            --title "[automation] add new 10X company blog posts - $DATE" \
+            --body "Automatically added new 10X company blog posts fetched from https://product.10x.co.jp/archive/author/sota1235." \
+            --base main \
+            --head "$BRANCH_NAME"
