@@ -9,7 +9,7 @@ overrides:
   fast-xml-parser: '>=5.5.7'
   lodash: '>=4.18.1'
   lodash-es: '>=4.18.1'
-  undici: ^7.24.0
+  undici: ^8.0.0
   svgo: '>=4.0.1'
   dompurify: '>=3.3.2'
   minimatch: '>=3.1.4'
@@ -3511,9 +3511,9 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  undici@7.24.7:
-    resolution: {integrity: sha512-H/nlJ/h0ggGC+uRL3ovD+G0i4bqhvsDOpbDv7At5eFLlj2b41L8QliGbnl2H7SnDiYhENphh1tQFJZf+MyfLsQ==}
-    engines: {node: '>=20.18.1'}
+  undici@8.1.0:
+    resolution: {integrity: sha512-E9MkTS4xXLnRPYqxH2e6Hr2/49e7WFDKczKcCaFH4VaZs2iNvHMqeIkyUAD9vM8kujy9TjVrRlQ5KkdEJxB2pw==}
+    engines: {node: '>=22.19.0'}
 
   unicode-trie@2.0.0:
     resolution: {integrity: sha512-x7bc76x0bm4prf1VLg79uhAzKw8DVboClSN5VxJuQ+LKDOVEW9CdH+VY7SP+vX7xCYQqzzgQpFqz15zeLvAtZQ==}
@@ -5379,7 +5379,7 @@ snapshots:
       parse5: 7.3.0
       parse5-htmlparser2-tree-adapter: 7.1.0
       parse5-parser-stream: 7.1.2
-      undici: 7.24.7
+      undici: 8.1.0
       whatwg-mimetype: 4.0.0
 
   chokidar@4.0.3:
@@ -6352,7 +6352,7 @@ snapshots:
       saxes: 6.0.0
       symbol-tree: 3.2.4
       tough-cookie: 6.0.1
-      undici: 7.24.7
+      undici: 8.1.0
       w3c-xmlserializer: 5.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
@@ -7115,7 +7115,7 @@ snapshots:
       chardet: 2.1.1
       cheerio: 1.2.0
       iconv-lite: 0.7.2
-      undici: 7.24.7
+      undici: 8.1.0
 
   open@7.4.2:
     dependencies:
@@ -7983,7 +7983,7 @@ snapshots:
   undici-types@7.18.2:
     optional: true
 
-  undici@7.24.7: {}
+  undici@8.1.0: {}
 
   unicode-trie@2.0.0:
     dependencies:

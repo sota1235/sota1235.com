@@ -40,7 +40,7 @@
       "fast-xml-parser": ">=5.5.7",
       "lodash": ">=4.18.1",
       "lodash-es": ">=4.18.1",
-      "undici": "^7.24.0",
+      "undici": "^8.0.0",
       "svgo": ">=4.0.1",
       "dompurify": ">=3.3.2",
       "minimatch": ">=3.1.4",
