@@ -21,16 +21,31 @@ function extractPubDateFromUrl(url) {
 }
 
 function decodeHtmlEntities(str) {
-  return str
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
-    .replace(/&#x([0-9a-fA-F]+);/g, (_, n) =>
-      String.fromCharCode(parseInt(n, 16))
-    )
-    .replace(/&amp;/g, '&')
+  const namedEntities = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#39;': "'",
+  }
+  return str.replace(
+    /&(?:#(\d+)|#x([0-9a-fA-F]+)|[a-zA-Z]+);/g,
+    (match, decimal, hex) => {
+      if (decimal) return String.fromCharCode(Number(decimal))
+      if (hex) return String.fromCharCode(parseInt(hex, 16))
+      return namedEntities[match] ?? match
+    }
+  )
+}
+
+function stripHtmlTags(str) {
+  let result = str
+  let prev
+  do {
+    prev = result
+    result = result.replace(/<[^>]*>/g, '')
+  } while (result !== prev)
+  return result
 }
 
 function parseEntries(html) {
@@ -44,7 +59,7 @@ function parseEntries(html) {
     const link = hrefMatch[1]
     if (!ENTRY_URL_PATTERN.test(link)) continue
     if (entries.has(link)) continue
-    const title = decodeHtmlEntities(m[2].replace(/<[^>]+>/g, '').trim())
+    const title = decodeHtmlEntities(stripHtmlTags(m[2]).trim())
     entries.set(link, title)
   }
   return Array.from(entries, ([link, title]) => ({ link, title }))
