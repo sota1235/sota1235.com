@@ -55,7 +55,7 @@ jobs:
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+          gh auth setup-git
 
           if git ls-remote --exit-code --heads origin "$BRANCH_NAME"; then
             echo "Branch $BRANCH_NAME already exists on remote. Skipping."
