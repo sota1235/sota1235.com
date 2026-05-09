@@ -21,7 +21,7 @@
     "@astrojs/react": "^5.0.0",
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "^3.7.0",
-    "@sota1235/remark-link-bookmark": "0.0.9",
+    "@sota1235/remark-link-bookmark": "0.0.10",
     "@tailwindcss/vite": "4.2.4",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
