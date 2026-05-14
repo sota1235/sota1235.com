@@ -21,7 +21,7 @@
     "@astrojs/react": "^5.0.0",
     "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "^3.7.0",
-    "@sota1235/remark-link-bookmark": "0.0.9",
+    "@sota1235/remark-link-bookmark": "0.0.10",
     "@tailwindcss/vite": "4.2.4",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
@@ -33,8 +33,12 @@
     "tailwindcss": "^4.2.1",
     "typescript": "^6.0.0"
   },
-  "packageManager": "pnpm@10.33.2",
+  "packageManager": "pnpm@11.0.9+sha512.34ce82e6780233cf9cad8685029a8f81d2e06196c5a9bad98879f7424940c6817c4e4524fb7d38b8553ceed48b9758b8ebaf1abd3600c232c4c8cf7366086f38",
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ],
     "overrides": {
       "qs": ">=6.14.2",
       "fast-xml-parser": ">=5.5.7",
