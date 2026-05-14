@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import PageHeaderText from '../../components/PageHeaderText.astro'
 import { getCollection } from 'astro:content'
-import MediaItem from '../../components/MediaItem.astro'
+import MediaListItem from '../../components/MediaListItem.astro'
 
 const other = (await getCollection('other')).sort(
   (a, b) => Date.parse(b.data.date) - Date.parse(a.data.date)
@@ -11,17 +11,14 @@ const other = (await getCollection('other')).sort(
 
 <Layout title="OTHER" description="Other media of @sota1235">
   <PageHeaderText>OTHER</PageHeaderText>
-  <div
-    class="mb-[200px] grid grid-cols-2 justify-items-center gap-6 sm:grid-cols-3 md:grid-cols-4 md:gap-10"
-  >
+  <div class="mb-[200px]">
     {
       other.map((item) => (
-        <MediaItem
+        <MediaListItem
           title={item.data.title}
-          description={`${item.data.mediaTitle} / ${item.data.title}`}
+          mediaTitle={item.data.mediaTitle}
           imageUrl={item.data.ogpImageUrl}
           link={item.data.link}
-          className="h-[120px] w-[155px] md:h-[160px] md:w-[213px]"
         />
       ))
     }

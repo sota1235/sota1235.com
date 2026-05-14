@@ -1,0 +1,31 @@
+---
+type Props = {
+  title: string
+  mediaTitle: string
+  imageUrl: string
+  link: string
+}
+
+const { link, imageUrl, title, mediaTitle } = Astro.props
+---
+
+<a
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group flex items-center gap-4 border-b border-black/20 py-4 hover:bg-black/5 active:bg-black/5"
+>
+  <div
+    class="h-[80px] w-[80px] shrink-0 border border-black md:h-[100px] md:w-[100px]"
+  >
+    <img class="h-full w-full object-contain" src={imageUrl} alt={title} />
+  </div>
+  <div class="min-w-0">
+    <p class="text-sm text-black/60">{mediaTitle}</p>
+    <p
+      class="text-base font-medium text-black group-hover:text-black_hover group-active:text-black_hover md:text-lg"
+    >
+      {title}
+    </p>
+  </div>
+</a>
