@@ -13,7 +13,7 @@ const { link, imageUrl, title, mediaTitle } = Astro.props
   href={link}
   target="_blank"
   rel="noopener noreferrer"
-  class="group flex items-center gap-4 border-b border-gray-200 py-4 hover:bg-gray-50 active:bg-gray-50"
+  class="group flex items-center gap-4 border-b border-black/20 py-4 hover:bg-black/5 active:bg-black/5"
 >
   <div
     class="h-[80px] w-[80px] shrink-0 border border-black md:h-[100px] md:w-[100px]"
@@ -21,7 +21,7 @@ const { link, imageUrl, title, mediaTitle } = Astro.props
     <img class="h-full w-full object-contain" src={imageUrl} alt={title} />
   </div>
   <div class="min-w-0">
-    <p class="text-sm text-gray-500">{mediaTitle}</p>
+    <p class="text-sm text-black/60">{mediaTitle}</p>
     <p
       class="text-base font-medium text-black group-hover:text-black_hover group-active:text-black_hover md:text-lg"
     >

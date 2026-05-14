@@ -21,11 +21,11 @@ const { link, imageUrl, title, description, className } = Astro.props
 >
   <img class="h-[100%] w-[100%] object-contain" src={imageUrl} alt={title} />
   <div
-    class="absolute bottom-0 h-[100%] w-[100%] opacity-0 group-hover:bg-black group-hover:opacity-80"
+    class="absolute bottom-0 h-[100%] w-[100%] opacity-0 group-hover:bg-black group-hover:opacity-80 group-active:bg-black group-active:opacity-80"
   >
   </div>
   <div
-    class="absolute bottom-0 flex h-[100%] items-center justify-center px-2 py-4 text-center text-sm text-white opacity-0 group-hover:opacity-100 md:text-base"
+    class="absolute bottom-0 flex h-[100%] items-center justify-center px-2 py-4 text-center text-sm text-white opacity-0 group-hover:opacity-100 group-active:opacity-100 md:text-base"
   >
     {description}
   </div>
