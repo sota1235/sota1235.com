@@ -24,8 +24,8 @@ importers:
         specifier: ^3.7.0
         version: 3.7.3
       '@sota1235/remark-link-bookmark':
-        specifier: 0.0.10
-        version: 0.0.10
+        specifier: 0.0.11
+        version: 0.0.11
       '@tailwindcss/vite':
         specifier: 4.3.0
         version: 4.3.0(vite@7.3.3(@types/node@25.9.1)(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.9.0))
@@ -931,8 +931,8 @@ packages:
     engines: {node: '>= 8.0.0'}
     hasBin: true
 
-  '@sota1235/remark-link-bookmark@0.0.10':
-    resolution: {integrity: sha512-yJZa0Q7WT9Qz28COw8APukTHlj8ZfYHNSrRNMEhPvHqjf/k4osVak4Eqpzj3eE5/5lKU6JHwkPcJRmFAKxEAcQ==}
+  '@sota1235/remark-link-bookmark@0.0.11':
+    resolution: {integrity: sha512-N5kgWz8YwselOXwg/dgJ2esm5vPpE9KjnjNGOxHdsynGkUsuyDueM9SS99SosXWHfixYXzaR7UFwQhK4y/TP5Q==}
 
   '@tailwindcss/node@4.3.0':
     resolution: {integrity: sha512-aFb4gUhFOgdh9AXo4IzBEOzBkkAxm9VigwDJnMIYv3lcfXCJVesNfbEaBl4BNgVRyid92AmdviqwBUBRKSeY3g==}
@@ -1666,8 +1666,8 @@ packages:
     resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
     engines: {node: '>= 4'}
 
-  dompurify@3.4.1:
-    resolution: {integrity: sha512-JahakDAIg1gyOm7dlgWSDjV4n7Ip2PKR55NIT6jrMfIgLFgWo81vdr1/QGqWtFNRqXP9UV71oVePtjqS2ebnPw==}
+  dompurify@3.4.7:
+    resolution: {integrity: sha512-2jBxDJY4RR06tQNy4w5FlFH7kfxsQZlufd0sbv+chfHCxeJwrFw2baUDsSwvBISD4K4RDbd0PTfy3uNXsR6siA==}
 
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
@@ -2387,10 +2387,6 @@ packages:
 
   lookup-closest-locale@6.2.0:
     resolution: {integrity: sha512-/c2kL+Vnp1jnV6K6RpDTHK3dgg0Tu2VVp+elEiJpjfS1UyY7AjOYHohRug6wT0OpoX2qFgNORndE9RqesfVxWQ==}
-
-  lru-cache@11.3.5:
-    resolution: {integrity: sha512-NxVFwLAnrd9i7KUBxC4DrUhmgjzOs+1Qm50D3oF1/oL+r1NpZ4gA7xvG0/zJ8evR7zIKn4vLf7qTNduWFtCrRw==}
-    engines: {node: 20 || >=22}
 
   lru-cache@11.5.1:
     resolution: {integrity: sha512-RPimw/7aMdv2oqRrxKwvZXcPfwBrn/JZ2xYcY9Hus/6LaS3VOAKVWKWgNLCFSiOm1ESXinjsDlidVU7JlnCN2A==}
@@ -3496,10 +3492,6 @@ packages:
 
   undici-types@7.24.6:
     resolution: {integrity: sha512-WRNW+sJgj5OBN4/0JpHFqtqzhpbnV0GuB+OozA9gCL7a993SmU+1JBZCzLNxYsbMfIeDL+lTsphD5jN5N+n0zg==}
-
-  undici@7.24.7:
-    resolution: {integrity: sha512-H/nlJ/h0ggGC+uRL3ovD+G0i4bqhvsDOpbDv7At5eFLlj2b41L8QliGbnl2H7SnDiYhENphh1tQFJZf+MyfLsQ==}
-    engines: {node: '>=20.18.1'}
 
   undici@7.25.0:
     resolution: {integrity: sha512-xXnp4kTyor2Zq+J1FfPI6Eq3ew5h6Vl0F/8d9XU5zZQf1tX9s2Su1/3PiMmUANFULpmksxkClamIZcaUqryHsQ==}
@@ -4827,12 +4819,12 @@ snapshots:
       fflate: 0.7.4
       string.prototype.codepointat: 0.2.1
 
-  '@sota1235/remark-link-bookmark@0.0.10':
+  '@sota1235/remark-link-bookmark@0.0.11':
     dependencies:
       '@types/mdast': 4.0.4
       clsx: 2.1.1
       debug: 4.4.3
-      dompurify: 3.4.1
+      dompurify: 3.4.7
       jsdom: 29.1.1
       open-graph-scraper: 6.11.0
       typescript: 6.0.3
@@ -5393,7 +5385,7 @@ snapshots:
       parse5: 7.3.0
       parse5-htmlparser2-tree-adapter: 7.1.0
       parse5-parser-stream: 7.1.2
-      undici: 7.24.7
+      undici: 7.25.0
       whatwg-mimetype: 4.0.0
 
   chokidar@4.0.3:
@@ -5643,7 +5635,7 @@ snapshots:
     dependencies:
       domelementtype: 2.3.0
 
-  dompurify@3.4.1:
+  dompurify@3.4.7:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
@@ -6359,7 +6351,7 @@ snapshots:
       decimal.js: 10.6.0
       html-encoding-sniffer: 6.0.0
       is-potential-custom-element-name: 1.0.1
-      lru-cache: 11.3.5
+      lru-cache: 11.5.1
       parse5: 8.0.1
       saxes: 6.0.0
       symbol-tree: 3.2.4
@@ -6539,8 +6531,6 @@ snapshots:
   longest-streak@3.1.0: {}
 
   lookup-closest-locale@6.2.0: {}
-
-  lru-cache@11.3.5: {}
 
   lru-cache@11.5.1: {}
 
@@ -7126,7 +7116,7 @@ snapshots:
       chardet: 2.1.1
       cheerio: 1.2.0
       iconv-lite: 0.7.2
-      undici: 7.24.7
+      undici: 7.25.0
 
   open@7.4.2:
     dependencies:
@@ -7992,8 +7982,6 @@ snapshots:
   undici-types@7.16.0: {}
 
   undici-types@7.24.6: {}
-
-  undici@7.24.7: {}
 
   undici@7.25.0: {}
 
