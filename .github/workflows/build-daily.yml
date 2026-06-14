@@ -82,4 +82,8 @@ jobs:
             --base main \
             --head "$BRANCH_NAME"
           PR_NUMBER="$(gh pr list -R "$REPO" --base main --head "$BRANCH_NAME" --json number --jq '.[0].number')"
-          gh pr merge "$PR_NUMBER" -R "$REPO" --auto --merge
+          # Try to enable auto-merge first (waits for required checks). If the PR
+          # is already in a "clean" mergeable state, enablePullRequestAutoMerge
+          # fails ("Pull request is in clean status"), so fall back to a direct merge.
+          gh pr merge "$PR_NUMBER" -R "$REPO" --auto --merge \
+            || gh pr merge "$PR_NUMBER" -R "$REPO" --merge
