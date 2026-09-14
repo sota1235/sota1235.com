@@ -12,15 +12,13 @@ const podcasts = (await getCollection('podcasts')).sort(
 <Layout title="PODCASTS" description="All podcast episodes of @sota1235">
   <PageHeaderText>PODCASTS</PageHeaderText>
   <div class="mb-[200px]">
-    {
-      podcasts.map((item) => (
-        <MediaListItem
-          title={item.data.title}
-          mediaTitle={item.data.mediaTitle}
-          imageUrl={item.data.ogpImageUrl}
-          link={item.data.link}
-        />
-      ))
-    }
+    {podcasts.map((item) => (
+      <MediaListItem
+        title={item.data.title}
+        mediaTitle={item.data.mediaTitle}
+        imageUrl={item.data.ogpImageUrl}
+        link={item.data.link}
+      />
+    ))}
   </div>
 </Layout>

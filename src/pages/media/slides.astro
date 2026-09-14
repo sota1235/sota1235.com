@@ -12,15 +12,13 @@ const slides = (await getCollection('slides')).sort(
 <Layout title="SLIDES" description="All slides of @sota1235">
   <PageHeaderText>SLIDES</PageHeaderText>
   <div class="mb-[200px]">
-    {
-      slides.map((item) => (
-        <MediaListItem
-          title={item.data.title}
-          mediaTitle={item.data.mediaTitle}
-          imageUrl={item.data.ogpImageUrl}
-          link={item.data.link}
-        />
-      ))
-    }
+    {slides.map((item) => (
+      <MediaListItem
+        title={item.data.title}
+        mediaTitle={item.data.mediaTitle}
+        imageUrl={item.data.ogpImageUrl}
+        link={item.data.link}
+      />
+    ))}
   </div>
 </Layout>
