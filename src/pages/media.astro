@@ -20,16 +20,14 @@ const other = (await getCollection('other'))
   <PageHeaderText>MEDIA</PageHeaderText>
   <SectionHeaderText>PODCASTS</SectionHeaderText>
   <div class="flex flex-row justify-start gap-10 overflow-x-auto">
-    {
-      podcasts.map((item) => (
-        <MediaItem
-          title={item.data.title}
-          description={`${item.data.mediaTitle} / ${item.data.title}`}
-          imageUrl={item.data.ogpImageUrl}
-          link={item.data.link}
-        />
-      ))
-    }
+    {podcasts.map((item) => (
+      <MediaItem
+        title={item.data.title}
+        description={`${item.data.mediaTitle} / ${item.data.title}`}
+        imageUrl={item.data.ogpImageUrl}
+        link={item.data.link}
+      />
+    ))}
   </div>
   <div class="mt-2 text-right">
     <a
@@ -42,17 +40,15 @@ const other = (await getCollection('other'))
   </div>
   <SectionHeaderText>SLIDES</SectionHeaderText>
   <div class="flex flex-row justify-start gap-10 overflow-x-auto">
-    {
-      slides.map((item) => (
-        <MediaItem
-          title={item.data.title}
-          description={`${item.data.mediaTitle} / ${item.data.title}`}
-          imageUrl={item.data.ogpImageUrl}
-          link={item.data.link}
-          className="h-[120px] min-w-[155px] md:h-[160px] md:min-w-[213px]"
-        />
-      ))
-    }
+    {slides.map((item) => (
+      <MediaItem
+        title={item.data.title}
+        description={`${item.data.mediaTitle} / ${item.data.title}`}
+        imageUrl={item.data.ogpImageUrl}
+        link={item.data.link}
+        className="h-[120px] min-w-[155px] md:h-[160px] md:min-w-[213px]"
+      />
+    ))}
   </div>
   <div class="mt-2 text-right">
     <a
@@ -65,17 +61,15 @@ const other = (await getCollection('other'))
   </div>
   <SectionHeaderText>OTHER</SectionHeaderText>
   <div class="flex flex-row justify-start gap-10 overflow-x-auto">
-    {
-      other.map((item) => (
-        <MediaItem
-          title={item.data.title}
-          description={`${item.data.mediaTitle} / ${item.data.title}`}
-          imageUrl={item.data.ogpImageUrl}
-          link={item.data.link}
-          className="h-[120px] min-w-[155px] md:h-[160px] md:min-w-[213px]"
-        />
-      ))
-    }
+    {other.map((item) => (
+      <MediaItem
+        title={item.data.title}
+        description={`${item.data.mediaTitle} / ${item.data.title}`}
+        imageUrl={item.data.ogpImageUrl}
+        link={item.data.link}
+        className="h-[120px] min-w-[155px] md:h-[160px] md:min-w-[213px]"
+      />
+    ))}
   </div>
   <div class="mt-2 mb-[200px] text-right">
     <a

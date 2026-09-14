@@ -12,15 +12,13 @@ const other = (await getCollection('other')).sort(
 <Layout title="OTHER" description="Other media of @sota1235">
   <PageHeaderText>OTHER</PageHeaderText>
   <div class="mb-[200px]">
-    {
-      other.map((item) => (
-        <MediaListItem
-          title={item.data.title}
-          mediaTitle={item.data.mediaTitle}
-          imageUrl={item.data.ogpImageUrl}
-          link={item.data.link}
-        />
-      ))
-    }
+    {other.map((item) => (
+      <MediaListItem
+        title={item.data.title}
+        mediaTitle={item.data.mediaTitle}
+        imageUrl={item.data.ogpImageUrl}
+        link={item.data.link}
+      />
+    ))}
   </div>
 </Layout>

@@ -21,15 +21,12 @@ const { data, ...rest } = Astro.props
         className="text-2xl font-bold text-black"
       />
       <a href={`/blog/${rest.id}`}>
-        <HeaderText
-          className="mt-5 text-3xl hover:text-black_hover md:mt-7 md:text-4xl"
-          >{data.title}</HeaderText
-        >
+        <HeaderText className="mt-5 text-3xl hover:text-black_hover md:mt-7 md:text-4xl">
+          {data.title}
+        </HeaderText>
       </a>
     </div>
-    <article
-      class="prose prose-sm mb-[200px] max-w-none list-inside md:prose-base prose-h1:my-8 prose-inline-code:mx-1 prose-inline-code:rounded-xs prose-inline-code:bg-gray-200 prose-inline-code:p-0.5 prose-inline-code:text-red-500 prose-inline-code:before:content-none prose-inline-code:after:content-none prose-code-link:decoration-red-500"
-    >
+    <article class="prose prose-sm mb-[200px] max-w-none list-inside md:prose-base prose-h1:my-8 prose-inline-code:mx-1 prose-inline-code:rounded-xs prose-inline-code:bg-gray-200 prose-inline-code:p-0.5 prose-inline-code:text-red-500 prose-inline-code:before:content-none prose-inline-code:after:content-none prose-code-link:decoration-red-500">
       <slot />
     </article>
   </div>

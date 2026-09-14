@@ -11,7 +11,5 @@ const { date, className } = Astro.props
   datetime={date.toISOString()}
   class:list={['text-lg md:text-2xl', className]}
 >
-  {
-    `${date.getFullYear()}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getDate().toString().padStart(2, '0')}`
-  }
+  {`${date.getFullYear()}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getDate().toString().padStart(2, '0')}`}
 </time>

@@ -24,47 +24,45 @@ const posts = allPosts.sort((a, b) => {
   <PageHeaderText> BLOG </PageHeaderText>
   <section class="my-[60px]">
     <ul class="border-t-2 border-[#154B5F]">
-      {
-        posts.map((post) =>
-          post.collection === 'blog' ? (
-            <li class="border-b-2 border-[#154B5F] py-6">
-              <a
-                href={`/blog/${post.id}/`}
-                class="flex flex-col text-xl font-bold text-black md:flex-row md:text-2xl"
-              >
-                <FormattedDate
-                  date={post.data.pubDate}
-                  className="w-[120px] mr-[30px]"
-                />
-                <span class="hover:text-black_hover">{post.data.title}</span>
-              </a>
-            </li>
-          ) : (
-            <li class="border-b-2 border-[#154B5F] py-6">
-              <a
-                href={post.data.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex flex-col text-xl font-bold text-black md:flex-row md:text-2xl"
-              >
-                <FormattedDate
-                  date={new Date(post.data.pubDate)}
-                  className="w-[120px] mr-[30px]"
-                />
-                <div class="flex flex-col gap-1 hover:text-black_hover">
-                  <p>{post.data.title}</p>
-                  <p>
-                    <span class="text-lg text-black_hover md:text-xl">
-                      (Post at {post.data.company})
-                    </span>
-                    <ExternalLinkIcon className="inline h-3 w-3 fill-black_hover" />
-                  </p>
-                </div>
-              </a>
-            </li>
-          )
+      {posts.map((post) =>
+        post.collection === 'blog' ? (
+          <li class="border-b-2 border-[#154B5F] py-6">
+            <a
+              href={`/blog/${post.id}/`}
+              class="flex flex-col text-xl font-bold text-black md:flex-row md:text-2xl"
+            >
+              <FormattedDate
+                date={post.data.pubDate}
+                className="w-[120px] mr-[30px]"
+              />
+              <span class="hover:text-black_hover">{post.data.title}</span>
+            </a>
+          </li>
+        ) : (
+          <li class="border-b-2 border-[#154B5F] py-6">
+            <a
+              href={post.data.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-col text-xl font-bold text-black md:flex-row md:text-2xl"
+            >
+              <FormattedDate
+                date={new Date(post.data.pubDate)}
+                className="w-[120px] mr-[30px]"
+              />
+              <div class="flex flex-col gap-1 hover:text-black_hover">
+                <p>{post.data.title}</p>
+                <p>
+                  <span class="text-lg text-black_hover md:text-xl">
+                    (Post at {post.data.company})
+                  </span>
+                  <ExternalLinkIcon className="inline h-3 w-3 fill-black_hover" />
+                </p>
+              </div>
+            </a>
+          </li>
         )
-      }
+      )}
     </ul>
   </section>
 </Layout>
