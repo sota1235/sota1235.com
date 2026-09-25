@@ -36,7 +36,7 @@
   },
   "packageManager": "pnpm@12.4.2",
   "devDependencies": {
-    "@astrojs/partytown": "2.1.7",
+    "@astrojs/partytown": "2.1.8",
     "@axe-core/playwright": "4.13.0",
     "@lhci/cli": "0.15.1",
     "@playwright/test": "1.63.0",
