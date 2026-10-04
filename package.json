@@ -34,7 +34,7 @@
     "tailwindcss": "^4.2.1",
     "typescript": "^6.0.0"
   },
-  "packageManager": "pnpm@12.8.1",
+  "packageManager": "pnpm@12.8.2",
   "devDependencies": {
     "@astrojs/partytown": "2.1.8",
     "@axe-core/playwright": "4.13.0",
