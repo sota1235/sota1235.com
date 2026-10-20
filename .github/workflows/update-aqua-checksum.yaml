@@ -20,26 +20,26 @@ jobs:
       - name: Generate token (octo-sts)
         if: ${{ ! github.event.pull_request.head.repo.fork }}
         id: octo-sts
-        uses: octo-sts/action@f603d3be9d8dd9871a265776e625a27b00effe05 # v1.1.1
+        uses: octo-sts/action@v1.1.1
         with:
           scope: ${{ github.repository }}
           identity: create_pull_request
 
       - name: Checkout
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@v6.0.3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
       - name: Install aqua
-        uses: aquaproj/aqua-installer@11dd79b4e498d471a9385aa9fb7f62bb5f52a73c # v4.0.4
+        uses: aquaproj/aqua-installer@v4.0.4
         with:
           aqua_version: v2.59.1
         env:
           AQUA_GITHUB_TOKEN: ${{ steps.octo-sts.outputs.token || github.token }}
 
       - name: Update checksum
-        uses: aquaproj/update-checksum-action@c5df5a5c2a897a9b807068f062140506d092e7ac # v0.2.7
+        uses: aquaproj/update-checksum-action@v0.2.7
         with:
           prune: true
           skip_push: ${{ github.event.pull_request.head.repo.fork }}

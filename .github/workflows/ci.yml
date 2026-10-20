@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
-      - uses: ./.github/actions/setup-node
+      - uses: $/.github/actions/setup-node
       - name: Linting
         run: pnpm run format:check
 
@@ -34,10 +34,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
-      - uses: ./.github/actions/setup-node
+      - uses: $/.github/actions/setup-node
       - name: Run astro check
         run: pnpm run astro check
 
@@ -48,10 +48,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
-      - uses: ./.github/actions/setup-node
+      - uses: $/.github/actions/setup-node
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps chromium
       - name: Check a11y
@@ -66,10 +66,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
-      - uses: ./.github/actions/setup-node
+      - uses: $/.github/actions/setup-node
       - name: Run lighthouse
         run: |
           pnpm run build
