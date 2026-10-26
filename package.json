@@ -37,7 +37,7 @@
   "packageManager": "pnpm@12.15.0",
   "devDependencies": {
     "@astrojs/partytown": "2.1.9",
-    "@axe-core/playwright": "4.13.0",
+    "@axe-core/playwright": "4.14.0",
     "@lhci/cli": "0.15.1",
     "@playwright/test": "1.64.1",
     "@tailwindcss/typography": "^0.5.19",
