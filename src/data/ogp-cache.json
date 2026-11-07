@@ -1,0 +1,26 @@
+{
+  "https://github.com/sota1235/sota1235.github.io": {
+    "title": "GitHub - sota1235/sota1235.com",
+    "description": "Contribute to sota1235/sota1235.com development by creating an account on GitHub.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://github.com/sota1235/sota1235.github.io",
+    "ogImageSrc": "https://opengraph.githubassets.com/40af23a3358ec81d94b193eddc4d0a41dc33d8937cffdcf083b22717047dfc26/sota1235/sota1235.com",
+    "ogImageAlt": "Contribute to sota1235/sota1235.com development by creating an account on GitHub.",
+    "url": "https://github.com/sota1235/sota1235.github.io"
+  },
+  "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025": {
+    "title": "Detecting and countering misuse of AI: August 2025",
+    "description": "Anthropic's August 2025 threat intelligence report on AI cybercrime and other abuses.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+    "ogImageSrc": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+    "ogImageAlt": "Anthropic logo",
+    "url": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"
+  },
+  "https://www.anthropic.com/news/disrupting-AI-espionage": {
+    "title": "Disrupting an AI-orchestrated cyber espionage campaign",
+    "description": "A report describing a highly sophisticated AI-led cyberattack and how we disrupted it.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.anthropic.com/news/disrupting-AI-espionage",
+    "ogImageSrc": "https://www-cdn.anthropic.com/images/4zrzovbb/website/e519896cc7432ba8deab8c661b2030f439f7a0e0-1200x630.jpg",
+    "ogImageAlt": "Anthropic logo",
+    "url": "https://www.anthropic.com/news/disrupting-AI-espionage"
+  }
+}

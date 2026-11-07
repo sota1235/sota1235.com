@@ -51,6 +51,12 @@ All collections are defined with Zod schemas in `src/content/config.ts`.
 - Automatically creates JSON files in `src/content/podcasts/` for new episodes
 - Prevents duplicate files by checking if they exist before writing
 
+**ogp-cache** (`src/integrations/ogp-cache.ts`):
+- Runs during `astro:config:setup` (so it runs for both `astro check` and `astro build`)
+- Scans blog posts for bare-URL paragraphs (the ones `@sota1235/remark-link-bookmark` turns into link cards), fetches OGP info for any URL not yet cached, and writes it to `src/data/ogp-cache.json`
+- The same file is passed to `remarkLinkBookmark` via its `cache` option, so cached URLs are never re-fetched at build time (protects the build from external sites going down or blocking bots)
+- Fetch failures are logged as warnings; the cache file is committed and gets updated by the daily build PR
+
 ### Page Structure
 
 - **Dynamic routes**: `/blog/[slug]/` renders individual blog posts
