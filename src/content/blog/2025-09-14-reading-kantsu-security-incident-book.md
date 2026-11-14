@@ -9,7 +9,7 @@ pubDate: '2025/09/14'
 
 読んだ
 
-https://www.kantsu.com/lp/cyberdecision/
+[「サイバー 攻撃その瞬間社長の決定」 - 株式会社関通](https://www.kantsu.com/lp/cyberdecision/)
 
 軽い気持ちで読んだけど思ったより学びが多かったので備忘録。
 

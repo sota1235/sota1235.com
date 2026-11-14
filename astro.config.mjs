@@ -7,6 +7,7 @@ import react from '@astrojs/react'
 import fetchMediaData from './src/integrations/fetch-media-data'
 import partytown from '@astrojs/partytown'
 import { remarkLinkBookmark } from '@sota1235/remark-link-bookmark'
+import ogpCache, { ogpCacheOption } from './src/integrations/ogp-cache'
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,6 +20,7 @@ export default defineConfig({
           mergeClassNames: {
             container: 'not-prose',
           },
+          cache: ogpCacheOption,
         },
       ],
     ],
@@ -28,6 +30,7 @@ export default defineConfig({
     sitemap(),
     react(),
     fetchMediaData(),
+    ogpCache(),
     partytown({
       config: {
         forward: ['dataLayer.push'],
