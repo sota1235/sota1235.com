@@ -171,9 +171,6 @@ importers:
 
   .:
     dependencies:
-      '@astrojs/check':
-        specifier: 0.9.12
-        version: 0.9.12(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.2(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)
       '@astrojs/markdown-remark':
         specifier: ^7.3.0
         version: 7.3.5(supports-color@5.5.0)
@@ -223,6 +220,9 @@ importers:
         specifier: ^6.0.0
         version: 6.0.3
     devDependencies:
+      '@astrojs/check':
+        specifier: 0.9.12
+        version: 0.9.12(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.2(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)
       '@astrojs/partytown':
         specifier: 2.1.9
         version: 2.1.9
