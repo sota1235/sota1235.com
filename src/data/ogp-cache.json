@@ -1,4 +1,82 @@
 {
+  "https://10x.co.jp/blog/10xblog/corpit/": {
+    "title": "事業に貢献するコーポレートITチームを作りたい 〜10XのコーポレートITチームの最近とこれから〜 | 株式会社10X",
+    "description": "2024年、10Xでは事業の方針転換に伴い、組織体制も大きく変わりました。\nこれにより10XのコーポレートITも大きな転換点を迎えました。",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://10x.co.jp/blog/10xblog/corpit/",
+    "ogImageSrc": "https://images.microcms-assets.io/assets/31e4bdb3f723445fb7d2ee7d755cef73/44009267b9984d65b64c258f0c20c121/blogThumb_20250820_fix.jpg",
+    "url": "https://10x.co.jp/blog/10xblog/corpit/"
+  },
+  "https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/": {
+    "title": "AI-augmented threat actor accesses FortiGate devices at scale | Amazon Web Services",
+    "description": "Commercial AI services are enabling even unsophisticated threat actors to conduct cyberattacks at scale—a trend Amazon Threat Intelligence has been tracking closely. A recent investigation illustrates this shift: Amazon Threat Intelligence observed a Russian-speaking financially motivated threat actor leveraging multiple commercial generative AI services to compromise over 600 FortiGate devices across more than 55 countries […]",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/",
+    "ogImageSrc": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2023/03/21/hacker.jpg",
+    "url": "https://aws.amazon.com/jp/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/"
+  },
+  "https://blog.cloudflare.com/response-to-salesloft-drift-incident/": {
+    "title": "The impact of the Salesloft Drift breach on Cloudflare and our customers",
+    "description": "An advanced threat actor, GRUB1, exploited the integration between Salesloft’s Drift chat agent and Salesforce to gain unauthorized access to Salesforce tenants of Cloudflare and many other companies. ",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://blog.cloudflare.com/response-to-salesloft-drift-incident/",
+    "ogImageSrc": "https://blog.cloudflare.com/_emdash/api/media/file/01KW4909W40N8M7QQ0E3RP5AR3.png",
+    "url": "https://blog.cloudflare.com/response-to-salesloft-drift-incident/"
+  },
+  "https://blog.flatt.tech/entry/llm_application_security": {
+    "title": "LLM / 生成AIを活用するアプリケーション開発におけるセキュリティリスクと対策 - GMO Flatt Security Blog",
+    "description": "はじめに こんにちは、GMO Flatt Security株式会社セキュリティエンジニアの佐藤(@Nick_nick310)です。 近年、大規模言語モデル(LLM、 Large Language Models)の進化と普及は目覚ましく、多くのサービスや業務プロセスで生成AIとして活用されています。LLMは多大なメリットをもたらす一方で、その特性に起因する新たなセキュリティリスクも指摘されており、安全な活用のためには十分な理解と対策が不可欠です。LLMを自社のサービスや業務に組み込む際、どのようなセキュリティ上の課題に直面する可能性があるでしょうか。 本稿では、LLMを活用したアプリケーションを…",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://blog.flatt.tech/entry/llm_application_security",
+    "ogImageSrc": "https://cdn.image.st-hatena.com/image/scale/4b28b96f00290b7b5bca9d5c81ee6f0487432277/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Ff%2Fflattsecurity%2F20250425%2F20250425082056.png",
+    "ogImageAlt": "LLM / 生成AIを活用するアプリケーション開発におけるセキュリティリスクと対策 - GMO Flatt Security Blog",
+    "url": "https://blog.flatt.tech/entry/llm_application_security"
+  },
+  "https://docs.github.com/en/actions/reference/security/secure-use#using-third-party-actions": {
+    "title": "Secure use reference - GitHub Docs",
+    "description": "Security practices for writing workflows and using GitHub Actions features.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://docs.github.com/en/actions/reference/security/secure-use#using-third-party-actions",
+    "ogImageSrc": "https://docs.github.com/assets/cb-345/images/social-cards/actions.png",
+    "url": "https://docs.github.com/en/actions/reference/security/secure-use#using-third-party-actions"
+  },
+  "https://docs.github.com/ja/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#issue_comment-on-issues-only-or-pull-requests-only": {
+    "title": "ワークフローをトリガーするイベント - GitHubドキュメント",
+    "description": "GitHubで特定のアクティビティが発生したとき、スケジュールされた時刻、またはGitHub外のイベントが発生したときに実行されるようにワークフローを構成できます。",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://docs.github.com/ja/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#issue_comment-on-issues-only-or-pull-requests-only",
+    "ogImageSrc": "https://docs.github.com/assets/cb-345/images/social-cards/actions.png",
+    "url": "https://docs.github.com/ja/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#issue_comment-on-issues-only-or-pull-requests-only"
+  },
+  "https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk": {
+    "title": "Finance worker pays out $25 million after video call with deepfake ‘chief financial officer’ | CNN",
+    "description": "A finance worker at a multinational firm was tricked into paying out $25 million to fraudsters using deepfake technology to pose as the company’s chief financial officer in a video conference call, according to Hong Kong police.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk",
+    "ogImageSrc": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1437811938.jpg?c=16x9&q=w_800,c_fill",
+    "url": "https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk"
+  },
+  "https://enro.jp/products/electric-kamayakimeijin-mini?srsltid=AfmBOoopGg3Bbo1Pe3zOy1lyXOGUfjg5lGIPEnR7wHeUYzqzsTWmWVje": {
+    "title": "電気式窯焼名人mini 小型家電ピザ窯（トースターとしても使用可）",
+    "description": "トースターサイズの小型ピザ窯 最大直径22cmのピザが焼ける 最大火力は450℃（家電としては異次元） 約20分の予熱で450℃に到達 90〜120秒でピザが焼き上がる 150〜450℃の範囲で温度調整可能 トースターとしても使用可能（予熱不要） キッチンで支えてもっと手軽＆身近に 8つの焼き方モード ピザだけじゃない！パンやステーキも 公式YouTubeで豊富なレシピ動画あり 平日午前10時までのご注文は当日出荷 1年間のメーカー保証 ブラックとホワイトのカラバリ",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://enro.jp/products/electric-kamayakimeijin-mini?srsltid=AfmBOoopGg3Bbo1Pe3zOy1lyXOGUfjg5lGIPEnR7wHeUYzqzsTWmWVje",
+    "ogImageSrc": "https://enro.jp/cdn/shop/files/2026-06-11T105714.472_7d6f3dfe-a0b7-442b-b958-f852b07ce877.png?v=1781143139",
+    "url": "https://enro.jp/products/electric-kamayakimeijin-mini?srsltid=AfmBOoopGg3Bbo1Pe3zOy1lyXOGUfjg5lGIPEnR7wHeUYzqzsTWmWVje"
+  },
+  "https://genai.owasp.org/llmrisk/llm01-prompt-injection/": {
+    "title": "LLM01:2025 Prompt Injection",
+    "description": "Learn about LLM01: Prompt Injection—understand how attackers exploit inputs to manipulate model behavior and discover strategies to defend against this threat.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+    "ogImageSrc": "https://genai.owasp.org/wp-content/uploads/2024/04/LLM01.25.png",
+    "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+  },
+  "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/": {
+    "title": "OWASP Top 10 for Agentic Applications for 2026",
+    "description": "The OWASP Top 10 for Agentic Applications 2026 is a globally peer-reviewed framework that identifies the most critical security risks facing autonomous and agentic AI systems. Developed through extensive collaboration with more than 100 industry experts, researchers, and practitioners, the list provides practical, actionable guidance to help organizations secure AI agents that plan, act, and make decisions across complex workflows. By distilling a broad ecosystem of OWASP GenAI Security guidance into an accessible, operational format, the Top 10 equips builders, defenders, and decision-makers with a clear starting point for reducing agentic AI risks and supporting safe, trustworthy deployments.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+    "ogImageSrc": "https://genai.owasp.org/wp-content/uploads/2025/12/OWASP-Top-10-for-Agentic-Applications-2026-12.6-Cover.jpg",
+    "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/"
+  },
+  "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/": {
+    "title": "OWASP Top 10 for LLM Applications 2025",
+    "description": "Discover the OWASP Top 10 for LLM Applications (2025) – essential guidance for securing large language model applications against emerging vulnerabilities.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+    "ogImageSrc": "https://genai.owasp.org/wp-content/uploads/2024/04/LLMAll_en-US_FINAL-Cover.png",
+    "url": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/"
+  },
   "https://github.com/sota1235/sota1235.github.io": {
     "title": "GitHub - sota1235/sota1235.com",
     "description": "Contribute to sota1235/sota1235.com development by creating an account on GitHub.",
@@ -6,6 +84,91 @@
     "ogImageSrc": "https://opengraph.githubassets.com/40af23a3358ec81d94b193eddc4d0a41dc33d8937cffdcf083b22717047dfc26/sota1235/sota1235.com",
     "ogImageAlt": "Contribute to sota1235/sota1235.com development by creating an account on GitHub.",
     "url": "https://github.com/sota1235/sota1235.github.io"
+  },
+  "https://issuehunt.jp/seminar/lounge8": {
+    "title": "【スペシャルゲストご来場】IssueHunt Lounge#8 CISO・CTO交流会",
+    "description": "お申し込みは締め切りました。多くの応募をいただき、ありがとうございました。参加可否につきましては、お申し込みをいただいた皆様へメールをお送りしておりますので、必ずご確認ください。　＝＝＝　IssueH... ",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://issuehunt.jp/seminar/lounge8",
+    "ogImageSrc": "https://storage.googleapis.com/studio-cms-assets/projects/brqEwv3GW4/s-1640x924_v-fms_webp_649ba306-7e0f-464f-8d1a-2703b74e0fa5.png",
+    "url": "https://issuehunt.jp/seminar/lounge8"
+  },
+  "https://piyolog.hatenadiary.jp/entry/2024/09/21/002152": {
+    "title": "物流代行事業者のランサムウエア感染についてまとめてみた - piyolog",
+    "description": "2024年9月13日、物流代行事業を展開する関通は、ランサムウエアによる社内システム障害が発生したと公表しました。同社のサービスで保有していた情報が流出した可能性もあることから、同社サービスを利用する多数の企業から関連する公表がされています。また同事業を行う倉業サービスも不正アクセスによるシステム障害が発生したと公表を行っています。ここでは関連する情報をまとめます。 物流代行事業者でランサム被害 2024年9月12日18時頃にシステム障害を検知し、その後一部サーバーにおいてランサムウエアの感染が確認された。同社の外部ネットワークの接続口から侵入され、その後複数のサーバーに被害が及んだ。 更なる…",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://piyolog.hatenadiary.jp/entry/2024/09/21/002152",
+    "ogImageSrc": "https://ogimage.blog.st-hatena.com/10257846132616586766/6802340630907759803/1737532788",
+    "ogImageAlt": "物流代行事業者のランサムウエア感染についてまとめてみた - piyolog",
+    "url": "https://piyolog.hatenadiary.jp/entry/2024/09/21/002152"
+  },
+  "https://piyolog.hatenadiary.jp/entry/2025/03/27/022634": {
+    "title": "閲覧者自身の操作によりマルウエア感染を狙う攻撃 ClickFix についてまとめてみた - piyolog",
+    "description": "2024年に悪用例が報告されたClickFix（クリックフィックス）と呼称されるソーシャルエンジニアリングの手口について、その後も複数の脅威アクターによる採用や攻撃事例の報告が相次いでいます。ここでは関連する情報をまとめます。 ClickFixとは何か ClickFixは閲覧者に対して、偽のCAPTCHA画面などを通じて攻撃者の用意したPowershellなどのスクリプトを閲覧者自身に実行させ、マルウエアをダウンロード、実行させるソーシャルエンジニアリング手口。 ClickFixに誘導されるケースは、マルバタイジング、SEOポイゾニングにより攻撃者の用意したサイトへ誘導される他、電子メールに添…",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://piyolog.hatenadiary.jp/entry/2025/03/27/022634",
+    "ogImageSrc": "https://ogimage.blog.st-hatena.com/10257846132616586766/6802418398339541515/1743009994",
+    "ogImageAlt": "閲覧者自身の操作によりマルウエア感染を狙う攻撃 ClickFix についてまとめてみた - piyolog",
+    "url": "https://piyolog.hatenadiary.jp/entry/2025/03/27/022634"
+  },
+  "https://scrapbox.io/sota1235public/2025%E5%B9%B4_%E3%83%A9%E3%82%A4%E3%83%96%E5%8F%82%E6%88%A6%E6%AD%B4": {
+    "title": "2025年 ライブ参戦歴 - きりん屋",
+    "description": "1月 25日 the pilloews@なんばHatch 2月 22日 Love Like Rock@Zepp Osaka Bayside 3月 2日 9mm parabellum bullet@Zepp Osaka Bayside 4月 27日 FINLANDS@大阪ANIMA 6月 10日 ROTTENGRAFFTY@KBSホール 8月 1日 Base Ball Bear x Galileo",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://scrapbox.io/sota1235public/2025%E5%B9%B4_%E3%83%A9%E3%82%A4%E3%83%96%E5%8F%82%E6%88%A6%E6%AD%B4",
+    "ogImageSrc": "https://gyazo.com/e2f55b5d50d79aa7c9c2833c7bbedc44/max_size/2000",
+    "url": "https://scrapbox.io/sota1235public/2025%E5%B9%B4_%E3%83%A9%E3%82%A4%E3%83%96%E5%8F%82%E6%88%A6%E6%AD%B4"
+  },
+  "https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html": {
+    "title": "Mitigating prompt injection attacks with a layered defense strategy",
+    "description": "With the rapid adoption of generative AI, a new wave of threats is emerging across the industry with the aim of manipulating the AI systems themselves. One such emerging…",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html",
+    "ogImageSrc": "https://blog.google/static/blogv2/images/google-1000x1000.png?version=pr20261029-2131",
+    "url": "https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html"
+  },
+  "https://simonwillison.net/2025/Oct/22/openai-ciso-on-atlas/": {
+    "title": "Dane Stuckey (OpenAI CISO) on prompt injection risks for ChatGPT Atlas",
+    "description": "My biggest complaint about the launch of the ChatGPT Atlas browser the other day was the lack of details on how OpenAI are addressing prompt injection attacks. The launch post …",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://simonwillison.net/2025/Oct/22/openai-ciso-on-atlas/",
+    "url": "https://simonwillison.net/2025/Oct/22/openai-ciso-on-atlas/"
+  },
+  "https://sota1235.com/blog/2015-05-03-185928/": {
+    "title": "print(\"Hello World\")",
+    "description": "print(\"Hello World\")",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://sota1235.com/blog/2015-05-03-185928/",
+    "ogImageSrc": "https://sota1235.com/blog/2015-05-03-185928/ogp.png",
+    "url": "https://sota1235.com/blog/2015-05-03-185928/"
+  },
+  "https://sota1235.com/blog/2023-12-31-131122/": {
+    "title": "2023年振り返り",
+    "description": "2023年振り返り",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://sota1235.com/blog/2023-12-31-131122/",
+    "ogImageSrc": "https://sota1235.com/blog/2023-12-31-131122/ogp.png",
+    "url": "https://sota1235.com/blog/2023-12-31-131122/"
+  },
+  "https://sota1235.com/blog/about-replay-fm/": {
+    "title": "Replay.fmというPodcastを始めました",
+    "description": "Replay.fmというPodcastを始めました",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://sota1235.com/blog/about-replay-fm/",
+    "ogImageSrc": "https://sota1235.com/blog/about-replay-fm/ogp.png",
+    "url": "https://sota1235.com/blog/about-replay-fm/"
+  },
+  "https://sota1235.notion.site/Beta-264bb64fc8cf807facd3c0ed2aef7b0f": {
+    "title": "Notion | Where teams and agents work together",
+    "description": "Made in Notion, the connected workspace where AI agents and teams organize docs, projects and knowledge together.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://sota1235.notion.site/Beta-264bb64fc8cf807facd3c0ed2aef7b0f",
+    "ogImageSrc": "https://app.notion.com/images/meta/default.png",
+    "url": "https://sota1235.notion.site/Beta-264bb64fc8cf807facd3c0ed2aef7b0f"
+  },
+  "https://sota1235.notion.site/README-sota1235-8457ce326b8f4b86aa1739de42891cdb?pvs=74": {
+    "title": "Notion | Where teams and agents work together",
+    "description": "Made in Notion, the connected workspace where AI agents and teams organize docs, projects and knowledge together.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://sota1235.notion.site/README-sota1235-8457ce326b8f4b86aa1739de42891cdb?pvs=74",
+    "ogImageSrc": "https://app.notion.com/images/meta/default.png",
+    "url": "https://sota1235.notion.site/README-sota1235-8457ce326b8f4b86aa1739de42891cdb?pvs=74"
+  },
+  "https://sota1235.notion.site/Replay-fm-5838061561c94a67b0ab0ede2ace2507": {
+    "title": "Notion | Where teams and agents work together",
+    "description": "Made in Notion, the connected workspace where AI agents and teams organize docs, projects and knowledge together.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://sota1235.notion.site/Replay-fm-5838061561c94a67b0ab0ede2ace2507",
+    "ogImageSrc": "https://app.notion.com/images/meta/default.png",
+    "url": "https://sota1235.notion.site/Replay-fm-5838061561c94a67b0ab0ede2ace2507"
   },
   "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025": {
     "title": "Detecting and countering misuse of AI: August 2025",
@@ -22,5 +185,62 @@
     "ogImageSrc": "https://www-cdn.anthropic.com/images/4zrzovbb/website/e519896cc7432ba8deab8c661b2030f439f7a0e0-1200x630.jpg",
     "ogImageAlt": "Anthropic logo",
     "url": "https://www.anthropic.com/news/disrupting-AI-espionage"
+  },
+  "https://www.driftbreach.com/": {
+    "title": "Salesloft Drift Breach - Track the Salesforce Incident",
+    "description": "Up-to-date list of organizations impacted by the Salesloft Drift OAuth token compromise targeting Salesforce customers.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.driftbreach.com/",
+    "ogImageSrc": "https://driftbreach.com/placeholder.jpg",
+    "ogImageAlt": "Salesloft Drift Breach - Track the Salesforce Incident",
+    "url": "https://www.driftbreach.com/"
+  },
+  "https://www.flexispot.jp/v9-lite.html": {
+    "title": "デスクバイク・V9 Lite | FlexiSpot 公式ストア",
+    "description": "FlexiSpot デスクバイクV9 Lite 調節可能 フィットネスバイク 椅子 エアロバイク ランニングマシン 消費カロリー",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.flexispot.jp/v9-lite.html",
+    "ogImageSrc": "https://s3.springbeetle.eu/dev-de-s3-flexispot/commodity/item/1028_file_V9-LITE-511-800-ZT.jpg",
+    "url": "https://www.flexispot.jp/v9-lite.html"
+  },
+  "https://www.helpnetsecurity.com/2026/04/16/nist-national-vulnerability-database-nvd-enrichment/": {
+    "title": "NIST admits defeat on NVD backlog, will enrich only highest-risk CVEs going forward - Help Net Security",
+    "description": "NIST is overhauling how it manages the National Vulnerability Database (NVD), switching to a risk-based model for vulnerability enrichment.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.helpnetsecurity.com/2026/04/16/nist-national-vulnerability-database-nvd-enrichment/",
+    "ogImageSrc": "https://img.helpnetsecurity.com/wp-content/uploads/2024/04/03121316/nist_nvd-1500.webp",
+    "url": "https://www.helpnetsecurity.com/2026/04/16/nist-national-vulnerability-database-nvd-enrichment/"
+  },
+  "https://www.salesloft.com/security-compliance": {
+    "title": "Security & Compliance | Salesloft",
+    "description": "You need a secure sales platform for your business. Salesloft adheres to strict standards to ensure trust in our software. Read more about our measures.",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.salesloft.com/security-compliance",
+    "ogImageSrc": "https://www.salesloft.com/og-share.png",
+    "url": "https://www.salesloft.com/security-compliance"
+  },
+  "https://www.trendmicro.com/ja_jp/jp-security/24/e/breaking-securitynews-20240529-02.html": {
+    "title": "生成AIでランサムウェアを作成した容疑者の摘発事例を考察",
+    "description": "2024年5月27日、生成AIを悪用してランサムウェアを作成したとして警視庁が男性を逮捕しました。同年10月1日には東京地裁において論告求刑公判が行われました。本稿では、生成AIを悪用してマルウェアを作成し逮捕された日本初の事例を解説し、今後予想される脅威も考察します。",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://www.trendmicro.com/ja_jp/jp-security/24/e/breaking-securitynews-20240529-02.html",
+    "ogImageSrc": "https://www.trendmicro.com/content/dam/trendmicro/global/ja/jp-security/24/e/breaking-securitynews-20240529-02/thumbnail-image-om-breaking-securitynews-20240529-02-pc.jpg",
+    "url": "https://www.trendmicro.com/ja_jp/jp-security/24/e/breaking-securitynews-20240529-02.html"
+  },
+  "https://x.com/takepepe/status/2029367968841515311": {
+    "title": "Takepepe on X: \"AIなりすまし面談の注意喚起\" / X",
+    "description": "AIなりすまし面談の注意喚起",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://x.com/takepepe/status/2029367968841515311",
+    "ogImageSrc": "https://pbs.twimg.com/media/HCmq4HrawAEZ5Bk?format=webp&name=large",
+    "url": "https://x.com/takepepe/status/2029367968841515311"
+  },
+  "https://xtech.nikkei.com/atcl/nxt/news/24/02597/": {
+    "title": "日本を標的にしたメール攻撃の割合が世界の84％に急増、日本プルーフポイントが発表",
+    "description": "　日本プルーフポイントは2025年6月10日、サイバーセキュリティーの現状についてメディア向けの説明会を開催した。米Proofpoint（プルーフポイント）の統計によると、全世界の新種メール攻撃のうち日本を標的とした攻撃の割合は2025年1月～5月で84.0％であり、2024年の21.0％から4倍に急増した。",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://xtech.nikkei.com/atcl/nxt/news/24/02597/",
+    "ogImageSrc": "https://xtech.nikkei.com/atcl/nxt/news/24/02597/topm.jpg?20220512",
+    "url": "https://xtech.nikkei.com/atcl/nxt/news/24/02597/"
+  },
+  "https://zenn.dev/sota1235/scraps/5f8581ddf0df4f": {
+    "title": "サイバーセキュリティ経営ガイドライン Ver 3.0を読む",
+    "description": "Sota Sugiuraさんのスクラップ",
+    "faviconSrc": "https://www.google.com/s2/favicons?domain=https://zenn.dev/sota1235/scraps/5f8581ddf0df4f",
+    "ogImageSrc": "https://res.cloudinary.com/zenn/image/upload/s--YGWgexHd--/c_fit%2Cco_rgb:000000%2Cg_north_west%2Cl_text:notosansjp-medium.otf_36:Sota%2520Sugiura%25E3%2581%25AE%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%2583%25E3%2583%2597%2Cw_700%2Cx_202%2Cy_103/c_fill%2Cg_north_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lRZHZNNmRneF9CZ1BkRDhHSVZ6SlJDdERBMndzazZOdW1LOWZqPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_84%2Cy_76/c_fit%2Cco_rgb:000000%2Cg_north_west%2Cl_text:notosansjp-medium.otf_56:%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E7%25B5%258C%25E5%2596%25B6%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%250A%2520Ver%25203.0%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2580%2Cw_1032%2Cx_84%2Cy_218/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "url": "https://zenn.dev/sota1235/scraps/5f8581ddf0df4f"
   }
 }
