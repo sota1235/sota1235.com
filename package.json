@@ -33,7 +33,7 @@
     "tailwindcss": "^4.2.1",
     "typescript": "^6.0.0"
   },
-  "packageManager": "pnpm@12.16.1",
+  "packageManager": "pnpm@12.20.0",
   "devDependencies": {
     "@astrojs/check": "0.9.12",
     "@astrojs/partytown": "2.1.9",
